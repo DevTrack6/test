@@ -1,0 +1,18 @@
+{
+	"username": "Webhook",
+	"username": "JIRA",
+	"avatar_url": "https://cdn.enewstoday.co.kr/news/photo/first/200908/img_222799_1.jpg",
+	"embeds": [
+		{
+			"author": {
+				"name": "{{issue.epic.key}}"
+			},
+			"title": "{{issue.summary}}",
+			"description": "{{issue.status.name}}",
+			"body": "{{issue.description}}\n{{commit.message}}\n{{commit.url}}",
+			"footer": {
+				"text": "commit from {{commit.repository.name}}"
+			}
+		}
+	]
+}
