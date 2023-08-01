@@ -5,11 +5,10 @@
 	"embeds": [
 		{
 			"author": {
-				"name": "{{issue.epic.key}}"
+				"name": "{{issue.epic.key}} - {{issue.key}}"
 			},
 			"title": "{{issue.summary}}",
-			"description": "{{issue.status.name}}",
-			"body": "{{issue.description}}\n{{commit.message}}\n{{commit.url}}",
+			"description": "{{issue.status.name}}\n{{issue.description}}\n{{commit.message}}\ncommit: {{commit.url}}\n{{issue.tourl}}",
 			"footer": {
 				"text": "commit from {{commit.repository.name}}"
 			}
